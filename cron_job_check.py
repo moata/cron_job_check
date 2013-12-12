@@ -18,7 +18,17 @@ EXIT_UNKNOWN = 3
 
 
 def usges():
-  print 'help'
+  print 'cron_job_check\n'\
+  'Verion 1.0\n' \
+  '--------------------------------------------\n'\
+  'cron_job_check.py This script allows you to check cron job whether running or not .\n'\
+  'you simmply pass the path of cron job log file , and threshold of modification time in minute/second.\n'\
+  '\n'\
+  'usage : \n'\
+  '---------------------------------------------\n'\
+  '-t <time_in_second>\n'\
+  '-f <path to cron job log file>\n'\
+  'example : ./cron_job_check -f /va/log/test.log -t 0.30\n'
 
 
 def pares_option():
