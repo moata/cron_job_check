@@ -2,7 +2,7 @@
 
 #Author : Moatasem.Abdalmahdi
 #Date   : 2013-12-12
-# nagios plugin :  Check cron job 
+#Nagios plugin :  Check cron job 
 
 
 
