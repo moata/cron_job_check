@@ -69,7 +69,11 @@ if __name__ == '__main__':
     if opt in ('-f','--file'):
       f = arg
     elif opt in ('-t','--time'):
-      t = arg
+      try:
+        t = float(arg)
+      except:
+        print('time must be valid integers')
+        sys.exit(EXIT_CRITICAL)
     elif opt in ('-h','--help'):
       usges()
       sys.exit(EXIT_OK)
