@@ -80,7 +80,7 @@ if __name__ == '__main__':
     else:
        raise False ,"unhandled option"
   
-  if not t and f:
+  if not t or not f:
     usges()
     sys.exit(EXIT_CRITICAL)
   
