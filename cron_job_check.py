@@ -34,7 +34,7 @@ def usges():
 def pares_option():
   try:
     opts , args = getopt.getopt(sys.argv[1:],'f:t:h',["file=","time=","help"])
-  except getopt.GetoptError as err:
+  except getopt.GetoptError , err:
     print str(err)
     usges()
     sys.exit(EXIT_CRITICAL)
@@ -43,7 +43,7 @@ def pares_option():
 def file_accessible(f,mode):
   try:
     fh = open(f,mode)
-  except IOError as e:
+  except IOError , e:
     print str(e)
     sys.exit(EXIT_CRITICAL)
     
